@@ -5,6 +5,7 @@ import 'package:flutter_application_1/presentation/login/login.dart';
 import 'package:flutter_application_1/presentation/main/main_view.dart';
 import 'package:flutter_application_1/presentation/onboarding/onboarding.dart';
 import 'package:flutter_application_1/presentation/register/register.dart';
+import 'package:flutter_application_1/presentation/resources/strings_manager.dart';
 import 'package:flutter_application_1/presentation/splash/splash.dart';
 import 'package:flutter_application_1/presentation/store_details/store_details.dart';
 
@@ -44,10 +45,10 @@ class RouteGenerator {
     return MaterialPageRoute(
         builder: (_) => Scaffold(
               appBar: AppBar(
-                title: Text("No Route Found"),
+                title: Text(AppStrings.noRouteFound),
               ),
               body: Center(
-                child: Text("No Route Found"),
+                child: Text(AppStrings.noRouteFound),
               ),
             ));
   }
