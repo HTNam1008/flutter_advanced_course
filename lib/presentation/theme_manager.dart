@@ -60,5 +60,33 @@ ThemeData getApplicationTheme() {
       bodySmall: getRegularStyle(color: ColorManager.grey1),
       bodyLarge: getRegularStyle(color: ColorManager.grey),
     ),
+
+    // input decoration theme (text from field)
+    inputDecorationTheme: InputDecorationTheme(
+      contentPadding: EdgeInsets.all(AppPadding.p8),
+      hintStyle: getRegularStyle(color: ColorManager.grey),
+      labelStyle: getMediumStyle(color: ColorManager.darkGrey),
+      errorStyle: getRegularStyle(color: ColorManager.error),
+
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: ColorManager.grey, width: AppSize.s1_5),
+        borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8)),
+      ),
+
+      focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: ColorManager.primary, width: AppSize.s1_5),
+        borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8)),
+      ),
+
+      errorBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: ColorManager.error, width: AppSize.s1_5),
+        borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8)),
+      ),
+
+      focusedErrorBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: ColorManager.primary, width: AppSize.s1_5),
+        borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8)),
+      ),
+    ),
   );
 }
