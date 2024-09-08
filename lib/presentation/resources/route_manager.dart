@@ -22,7 +22,7 @@ class Routes {
 class RouteGenerator {
   static Route<dynamic> getRoute(RouteSettings routeSettings) {
     switch (routeSettings.name) {
-      case Routes.splashRoute:
+      case Routes.splashRoute:  
         return MaterialPageRoute(builder: (_) => const SplashView());
       case Routes.onBoardingRoute:
         return MaterialPageRoute(builder: (_) => const OnBoardingView());
