@@ -1,6 +1,6 @@
-# flutter_application_1
+# flutter_advanced_course
 
-A new Flutter project.
+Udemy: Flutter Advanced Course: Clean Architecture with MVVM
 
 ## Getting Started
 
