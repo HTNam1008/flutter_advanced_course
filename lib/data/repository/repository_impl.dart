@@ -5,8 +5,8 @@ import 'package:flutter_application_1/data/network/error_handler.dart';
 import 'package:flutter_application_1/data/network/failure.dart';
 import 'package:flutter_application_1/data/network/network_info.dart';
 import 'package:flutter_application_1/data/request/request.dart';
-import 'package:flutter_application_1/domain/model.dart';
-import 'package:flutter_application_1/domain/repository.dart';
+import 'package:flutter_application_1/domain/model/model.dart';
+import 'package:flutter_application_1/domain/repository/repository.dart';
 
 class RepositoryImpl implements  Repository {
   final RemoteDataSource _remoteDataSource;
